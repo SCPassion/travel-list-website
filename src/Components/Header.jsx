@@ -1,8 +1,8 @@
 export function Header() {
     return (
-        <header>
-            <img src="../../public/globe.png" alt="Globe" />
-            <h1>my travel journal.</h1>
+        <header className="header-container">
+            <img src="../../public/globe.png" alt="Globe" className="header-image"/>
+            <h1 className="header-title">my travel journal.</h1>
         </header>
     )
 }
