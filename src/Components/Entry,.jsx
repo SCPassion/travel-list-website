@@ -1,3 +1,5 @@
+import marker from "../../public/marker.png"
+
 export function Entry(props) {
     return (
         <section className="entry-container">
@@ -6,7 +8,7 @@ export function Entry(props) {
             <article class="entry-article">
 
                 <div className="entry-info">
-                    <img src="../../public/marker.png" alt="" className="entry-logo" />
+                    <img src={marker} alt="" className="entry-logo" />
                     <span className="entry-country">{props.country}</span>
                     <a href={props.googleMapsLink} target="_blank" className="entry-link">View on Google Maps</a>
                 </div>
