@@ -1,0 +1,9 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, main {
+  margin: 0;
+  background-color: gray;
+  font-family: "Inter", sans-serif;
+}
