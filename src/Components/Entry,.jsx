@@ -1,18 +1,19 @@
-export function Entry() {
+export function Entry(props) {
     return (
         <section className="entry-container">
-            <img src="../../public/image1.png" alt="" className="entry-image" />
+            
+            <img src={props.img.src} alt={props.img.alt} className="entry-image" />
             <article class="entry-article">
 
                 <div className="entry-info">
                     <img src="../../public/marker.png" alt="" className="entry-logo" />
-                    <span className="entry-country">JAPAN</span>
-                    <a href="" className="entry-link">View on Google Maps</a>
+                    <span className="entry-country">{props.country}</span>
+                    <a href={props.googleMapsLink} target="_blank" className="entry-link">View on Google Maps</a>
                 </div>
 
-                <h2 className="entry-title">Mount Fuji</h2>
-                <p className="entry-dates">12 Jan, 2023 - 24 Jan, 2023</p>
-                <p className="entry-text">Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.</p>
+                <h2 className="entry-title">{props.title}</h2>
+                <p className="entry-dates">{props.dates}</p>
+                <p className="entry-text">{props.text}</p>
 
             </article>
         </section>
