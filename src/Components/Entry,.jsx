@@ -1,4 +1,4 @@
-import marker from "../../public/marker.png"
+import marker from "../assets/marker.png"
 
 export function Entry(props) {
     return (
